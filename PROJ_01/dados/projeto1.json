@@ -1,0 +1,17 @@
+{
+    "projeto1":[
+        {
+            "nome": "Gestão de projetos com fiancas",
+            "categoria": "Urgente",
+            "numLarces":" 3 Lance",
+            "lanceMedio":"Lance médio de US$ 65",
+            "tempo":"3 meses atrás",
+            "precoHora": " $ 50 - $ 100",
+            "funcao1": "Contabilidade",
+            "funcao2": "Consultando",
+            "funcao3": "Excel",
+            "funcao4": "Juridico",
+            "funcao5": "Redação Juridica"
+        }
+    ]
+}

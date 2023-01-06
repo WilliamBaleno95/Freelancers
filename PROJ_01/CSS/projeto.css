@@ -1,0 +1,528 @@
+body , html{
+    height: 100%;
+    margin: 0;
+}
+header{
+    height: 620px;
+    width: 100%;
+    margin-top: 0;
+    
+    
+}
+/* nav{
+  overflow: hidden;
+ 
+} */
+
+.header1{
+    margin: 0;
+    /* margin-top: 0px; */
+    /* background-color: #aaa5a5; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../fundo2.jpeg");
+    color: white;
+    overflow-x: hidden;
+}
+
+/* .divNav{
+  display: flex;
+  background: transparent;
+  background-image: url("../fundo2.jpeg");
+} */
+
+.divTexto{
+    margin-top: 150px;
+    margin-left: 150px;
+    width: 495px;
+}
+.divTexto p{
+  font-size: 20px;
+}
+.empr p , .free p{
+  margin-left: 10px;
+}
+
+.divPEF{
+  margin-top: 25px;
+  margin-left: 150px;
+  display: flex;
+}
+/* .proj{
+  text-align: center;
+} */
+.empr , .free{
+  margin-left: 15px;
+  /* text-align: center; */
+  border-left: 1px solid white;
+  /* height: 40px; */
+  /* width:110px; */
+}
+
+.btEt{
+    background-color: rgb(25, 196, 139);
+    border-radius: 4px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    color: white;
+}
+.EncontrarTrabalho{
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 500px;
+}
+.dropbtnInicio , .dropbtnEncTrabalho , .dropbtnEmpregadores , .Entrar , .Registro{
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    /* overflow: hidden;  */
+    margin-top: 15px;
+  }
+  .dropbtnInicio{
+    margin-left: 120px;
+  }
+.Entrar{
+    margin-left: 600px;
+    border-left: 1px solid white;
+}
+.dropbtnInicio{
+  border-left: 1px solid white;
+}
+.dropbtnEncTrabalho , .dropbtnEmpregadores{
+  margin-left: 10px;
+}
+  
+  /* Dropdown button on hover & focus */
+  .dropbtnInicio:hover, .dropbtnInicio:focus , .dropbtnEncTrabalho:hover , 
+  .dropbtnEncTrabalho:focus , .dropbtnEmpregadores:hover, .dropbtnEmpregadores:focus ,
+  .Entrar:hover , .Entrar:focus, .Registro:hover, .Registro:focus{
+    background-color: #797b7c;
+  }
+  /* .td1:hover , .td1:focus , .td2:hover , .td2:focus , .td3:hover , .td3:focus{
+    background-color: rgb(25, 196, 139);
+    color: white;
+    
+  } */
+
+  
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdownInicio , .dropdownEncTrabalho , .dropdownEmpregadores {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content-Inicio , .dropdown-content-EncTrabalho , .dropdown-content-Empregadores{
+    display: none;
+    position:absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* text-align: center; */
+  }
+
+  
+  /* Links inside the dropdown */
+  .dropdown-content-Inicio a , .dropdown-content-EncTrabalho a , .dropdown-content-Empregadores a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content-Inicio a:hover , .dropdown-content-EncTrabalho a:hover , .dropdown-content-Empregadores a :hover{
+    background-color: #ddd;
+}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+
+
+#divBusca{
+    background-color:white;
+    border:solid 0px ;
+    border-radius:5px;
+    width:950px;
+    display: flex;
+    margin-top: 10px;
+    
+}
+  
+  #txtBusca{
+    background-color:white;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:50px;
+    width:900px;
+    border-radius: 5px;
+  }
+  .btprocurar{
+    /* margin-left: 160px; */
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 100px;
+    border: none;
+    background-color: rgb(25, 196, 139);
+    color: white;
+  }
+
+  .pCategorias , .pFuncionamento{
+    text-align: center;
+    font-size: 23px;
+  }
+  .Ultimos_Projetos , .Ultimos_Trabalhos,.fbem_avaliado{
+    font-size: 23px;
+  }
+
+  .divUltProjetos ,.divUltTrabalhos{
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 2px solid rgb(224, 219, 219);
+    /* width: 200px; */
+    /* height: 800px; */
+    border-radius: 5px;
+    /* background-color: #dadfe0; */
+    
+  }
+  .divFreelancers_mais_avaliados{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+  }
+  table{
+    margin-left: 150px;
+  }
+  .tdfinal1{
+    text-align: center;
+    /* margin-left: 30px; */
+    width: 240px;
+  }
+
+  /* ############################ CATEGORIA DE PROJETO & COMO FUNCIONA ########################################## */
+  .div_principal{
+    margin-left: 150px;
+    justify-content: center;
+  }
+  .elementos1,.elementos2,.elementos3{
+    display: flex;
+    text-align: center;
+    align-content: center;
+  }
+  .quadrado1, .quadrado2{
+    width: 240px;
+    height: 200px;
+    margin-left: 20px;
+    color:rgb(25, 196, 139);
+    /* border: 1px solid black; */
+    text-align: center;
+    border-radius: 5px;
+  }
+  .quadrado3{
+    color:rgb(25, 196, 139);
+    width: 322px;
+    height: 200px;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-align: center;
+    /* border: 1px solid black; */
+  }
+  p.number_qdr{
+    color: black;
+    width: 25px;
+    height: 20px;
+    background-color: #c2c5c7;
+    margin-left: 45%;
+    border-radius: 4px;
+  }
+  p.text_name{
+    color: black;
+  }
+  .quadrado1:hover, .quadrado1:focus , .quadrado2:hover, .quadrado2:focus , .quadrado3:hover, .quadrado3:focus{
+    background-color: rgb(25, 196, 139);
+    color: white;
+  }
+  .quadrado1:hover p.number_qdr ,.quadrado1:hover p.text_name{
+    color: white;
+  }
+  .quadrado2:hover p.number_qdr ,.quadrado2:hover p.text_name{
+    color: white;
+  }
+  .quadrado3:hover p.psize ,.quadrado3:hover p.text_name{
+    color: white;
+  }
+  
+
+
+  
+  /* ############################################################################################ */
+
+  /* ####################################### ######################################## */
+
+
+
+
+  /* ############################################################################################## */
+
+.pFuncionamento{
+  margin-top: 30px;
+}
+.UltProjetos, .UltTrabalhos , .Freelancers_avaliados{
+  margin-left: 150px;
+  display: flex;
+}
+
+.Procurar_todos_projeos , .Procurar_todos_trabalhos{
+  color: rgb(25, 196, 139);
+  margin-left: 690px;
+  /* margin-left: 150px; */
+}
+.Procurar_todos_freelancers{
+  color: rgb(25, 196, 139);
+  margin-left: 560px;
+}
+
+.ClassFooter{
+  background-color: rgb(46, 45, 45);
+  margin-block: 20px;
+  color: white;
+}
+.divFooter{
+  margin-left: 150px;
+}
+
+/* 
+#p4{
+  margin-left: 100px;
+} */
+.psize{
+  size: 10px;
+  color: #747575;
+} 
+
+.projetos2{
+  /* margin-left: 20px; */
+  display: flex;
+  /* border: 2px solid rgb(224, 219, 219); */
+  border-radius: 5px;
+  height: 200px;
+}
+
+.phora{
+  margin-left: 400px;
+  margin-top: 30px;
+}
+.btUrgente , .btDestaque{
+  margin-left: 20px;
+  background-color: rgb(255, 237, 231);
+  border: none;
+  color: rgb(23, 88, 23);
+  height: 30px;
+  border-radius: 4px;
+
+}
+
+.bt{
+  border:none;
+  height: 30px;
+  color: rgb(25, 196, 139) ;
+  background-color: rgb(217, 230, 225);
+  border-radius: 4px;
+}
+.btLance_agora{
+  border: none;
+  background-color: rgb(25, 196, 139);
+  color: white;
+  height: 35px;
+  width: 120px;
+  border-radius: 4px;
+}
+.projetos2:hover , .projetos2:focus , .Trabalhos:hover ,.Trabalhos:focus{
+  /* background-color: #d9dddf; */
+  border-left: 3px solid rgb(10, 202, 10);
+}
+
+
+.game_image{
+  margin-left: 10px;
+  margin-top: 30px;
+  height: 45px;
+  width: 50px;
+}
+.div_jogos{
+  margin-top: 20px;
+}
+.Trabalhos{
+  border: none;
+  display: flex;
+  height: 110px;
+}
+.tempo_total{
+  margin-top: 35px;
+}
+
+.btTempo_Total{
+  /* margin-top: 35px; */
+  margin-left: 510px;
+  /* margin-right: 40px; */
+  color: rgb(25, 196, 139);
+  border: 1px solid rgb(25, 196, 139);
+  height: 35px;
+  width: 120px;
+  border-radius: 4px;
+}
+
+/* .FixoNoTopo{
+  position: fixed;
+  top: 0px;
+  width: 100px;
+} */
+
+.nav1{
+  position: fixed;
+  top: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  z-index: 5;
+  width: 100%;
+  height: 80px;
+  
+}
+
+/* ######################## Modificar Nav ######################################################## */
+.nav1.ativo{
+  background-color: white;
+  z-index: 5;
+  box-shadow: 5px 10px 8px rgb(160, 159, 159);
+  /* color: black; */
+}
+
+
+.dropbtnInicio.ativarInicio , .Entrar.ativarBtEntrar{
+  color: black;
+  border-left: 1px solid rgb(146, 146, 146);
+}
+.dropbtnEncTrabalho.ativarBtTrabalho , .dropbtnEmpregadores.ativarBtEmpregadores, .Registro.ativarBtRegistro{
+  color: black;
+}
+/* ############################################################################################## */
+
+
+
+
+
+.people{
+  width: 95px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+.Div_people1 , .Div_people2, .Div_people3{
+  width: 340px;
+  height: 400px;
+  border: 2px solid rgb(224, 219, 219);
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 540px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  
+}
+.Div_people2, .Div_people3{
+  margin-left: 20px;
+}
+
+.Div_people1:hover , .Div_people2:hover ,.Div_people3:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.p_people{
+  color: #969797;
+}
+.avalia{
+  width: 30px;
+  height: 25px;
+  background-color: rgb(255, 174, 0);
+  /* text-align: center; */
+  border-radius: 3px;
+  color: white;
+  border: none;
+}
+.free_p{
+  margin-left: 22px;
+  color: #969797;
+}
+.bt_verPerfil{
+  color: white;
+  background-color: rgb(25, 196, 139);
+  border: none;
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+}
+.footer_icons{
+  display: flex;
+}
+
+.bt_subir{
+  background-color: rgb(25, 196, 139);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+#icon_angle{
+  height: 30px;
+}
+
+.tb{
+  margin: none;
+  margin-left: 30px;
+}
+
+#td_direitos_reservados{
+  width: 900px;
+  /* margin-right: 1px solid white; */
+}
+
+#td_icons{
+  width: 300px;
+  /* margin-left: 1px solid white; */
+  text-align: center;
+}
+
+#div_icons_footer{
+  height: 30px;
+}
+
+/* .Linha1 .fa:hover{
+    color: white;
+} */
+
+
+.h3Projeto1, .h3Projeto2, .h3Projeto3,.numLancer_lancerMedio_tempo{
+  margin-left: 10px;
+}
+
+.numLancer_lancerMedio_tempo{
+  display: flex;
+}

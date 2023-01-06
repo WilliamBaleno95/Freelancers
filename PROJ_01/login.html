@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+    
+</head>
+<body>
+    <header class="header1">
+        <nav class="nav1">
+            <div class="divNav">
+                <div class="dropdownInicio">
+                    <button onclick="Inicio()" class="dropbtnInicio">Inicio </button>
+                  
+                </div>
+
+                <div class="dropdownEncTrabalho">
+                    <button onclick="myFunctionEncTrabalho()" class="dropbtnEncTrabalho">Encontrar Trabalho <i class="fa fa-angle-down" style="color:black"></i></button>
+                    <div id="myDropdownEncTrabalho" class="dropdown-content-EncTrabalho">
+                        <a href="#">Publicar Um Servico</a>
+                        <a href="#">Procurar Projetos</a>
+                        <a href="#">Procurar Empregos</a>
+                    </div>
+                </div>
+
+                <div class="dropdownEmpregadores">
+                    <button onclick="myFunctionEmpregadores()" class="dropbtnEmpregadores">Empregadores <i class="fa fa-angle-down" style="color:black"></i></button>
+                    <div id="myDropdownEmpregadores" class="dropdown-content-Empregadores">
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                    </div>
+                </div>
+                <button onclick="Login()" class="Entrar">Entrar</button>
+                <button onclick="Registro()" class="Registro">Registro</button>
+            </div>
+            
+        </nav>
+    </header>
+    <div id="login">
+        
+        <form class="card">
+                <h2 class="class_h2">Bem vindo de volta!</h2>
+            <div class="divp">
+                <p id="p_conta">Nao tem uma conta? </p>
+                <p id="pnext">Registra-se agora!</p>
+            </div>
+            <div class="card-content">
+                <div class="card-content-area">
+                <table>
+                    <tr>
+                        <td class="td_icon"><i class="fa fa-user-o" style="font-size:20px;color: rgb(179, 176, 176);"></i></td>
+                        <td> <input type="text" id="usuario" autocomplete="off" placeholder=" Nome do usuario ( Endereço de email)"></td>
+                    </tr>
+                </table>
+                </div>
+                <div class="card-content-area">
+                    <table>
+                        <tr>
+                            <td class="td_icon"><i class="fa fa-lock" style="font-size:20px;color: rgb(179, 176, 176);"></i></td>
+                            <td> <input type="password" id="password" autocomplete="off" placeholder="Senha"> </td>
+                        </tr>
+                    </table>
+                    </div>
+            </div>
+            <div class="recuperar_senha">
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+            
+            <div class="card-footer">
+                <input type="submit" value="Entrar" class="submit" style="color: white;"> 
+            </div>
+        </form>
+
+    </div>
+
+    <footer >
+        <div class="ClassFooter">
+            <br><br>
+            <div class="divFooter">
+                <h2 class="h2Footer"> Minha conta</h2>
+                <p id="p1"> Conecta-se</p>
+                <p id="p2">Registro</p>
+                <p id="p3">Publica um trabalho</p>
+            </div> <br> <br>
+            <hr>
+            <div class="footer_icons">
+
+                <table class="tb">
+                    <tr>
+                        <td id="td_direitos_reservados"><p id="p4">2022 Todos os direitos reservados</p></td>
+                        <td id="td_icons" >
+                            <div id="div_icons_footer" style="border-left: 1px solid white ;">
+                                <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                                <i class="fa fa-twitter" style="font-size:24px"></i>
+                                <i class="fa fa-instagram" style="font-size:24px"></i>
+                                <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                                <i class="fa fa-pinterest" style="font-size:24px"></i>
+                                <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                            </div>
+                        </td>
+                        <td id="td_button">
+                            <button class="bt_subir">
+                                <i id="icon_angle" class="fa fa-angle-up" style="font-size:26px; color: white;"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <br>
+        </div>
+    </footer>
+
+
+
+    <script src="./JS/login.js"></script>
+    <script src="./JS/projeto.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./CSS/projeto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header1">
+        <nav class="nav1">
+            <div class="divNav">
+                <div class="dropdownInicio">
+                    <button onclick="Inicio()" class="dropbtnInicio">Inicio</button>
+                </div>
+
+                <div class="dropdownEncTrabalho">
+                    <button onclick="myFunctionEncTrabalho()" class="dropbtnEncTrabalho">Encontrar Trabalho <i class="fa fa-angle-down" style="color:white"></i></button>
+                    <div id="myDropdownEncTrabalho" class="dropdown-content-EncTrabalho">
+                        <a href="#">Publicar Um Servico</a>
+                        <a href="#">Procurar Projetos</a>
+                        <a href="#">Procurar Empregos</a>
+                    </div>
+                </div>
+
+                <div class="dropdownEmpregadores">
+                    <button onclick="myFunctionEmpregadores()" class="dropbtnEmpregadores">Empregadores <i class="fa fa-angle-down" style="color:white"></i></button>
+                    <div id="myDropdownEmpregadores" class="dropdown-content-Empregadores">
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                        <a href="#">...</a>
+                    </div>
+                </div>
+                <button onclick="Login()" class="Entrar">Entrar</button>
+                <button onclick="Registro()" class="Registro">Registro</button>
+            </div>
+            
+        </nav>
+
+        <div class="divTexto">
+            <h2> Contrata os melhores freelancers para qualquer trabalho online.</h2>
+            <p>Trabalhe com os melhores talentos freelancers de todo o mundo em nossa plataforma segura e economica.</p>
+        </div>
+        <div class="EncontrarTrabalho">
+            <button class="btEt"> <b>Encontrar Trabalho</b> </button> <br>
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Titulo do projeto ou palavra chave"/>
+                <button class="btprocurar"> <b>Procurar</b> </button>
+            </div>
+        </div>
+        <div class="divPEF">
+            <div class="proj">
+                <p><b>76</b> <br> Projetos</p>
+            </div>
+            <div class="empr">
+                <p> <b>4</b> <br> Empregos Publicos</p>
+            </div>
+            <div class="free">
+                <p><b>163</b> <br> Freel ancers</p>
+            </div>
+        </div>
+    </header>
+    <br> <br> 
+    <main>
+        <p class="pCategorias">Categorias de Projetos</p>
+        <div class="div_principal">
+            <div class="elementos1">
+                <div class="quadrado1" id="q1">
+                    <br> <br>
+                    <i id="icon1" class="fa fa-file-code-o" style="font-size:48px;"></i>
+                    <p class="number_qdr">16</p>
+                    <p class="text_name">Sites, TI e Software</p>
+                </div>
+                <div class="quadrado1" id="q2">
+                    <br> <br>
+                    <i id="icon2" class="fa fa-pencil fa-fw"  style="font-size:48px;"></i> 
+                    <p class="number_qdr">4</p>
+                    <p class="text_name">Redacao e Conteudo</p>
+                </div>
+                <div class="quadrado1" id="q3">
+                    <br> <br>
+                    <i id="icon3" class="fa fa-photo" style="font-size:48px;"></i>
+                    <p class="number_qdr">2</p>
+                    <p class="text_name">Design, Midia e Arquitetura</p>
+                    
+                </div>
+                <div class="quadrado1" id="q4">
+                    <br> <br>
+                    <i id="icon4" class="fa fa-mobile" style="font-size:48px;"></i>
+                    <p class="number_qdr">2</p>
+                    <p class="text_name">Telemoveis e Computadores</p>
+                </div>
+            </div>
+
+            <div class="elementos2">
+                <div class="quadrado2" id="q1">
+                    <br> <br>
+                    <i id="icon1" class="fa fa-cloud-upload" style="font-size:48px;"></i>
+                    <p class="number_qdr">1</p>
+                    <p class="text_name">Engenharia, Manufatura e Ciencia</p>
+                </div>
+                <div class="quadrado2" id="q2">
+                    <br> <br>
+                    <i id="icon2" class="fa fa-suitcase"  style="font-size:48px;"></i> 
+                    <p class="number_qdr">2</p>
+                    <p class="text_name">Negocio, Contabilidade e Juridico</p>
+                </div>
+                <div class="quadrado2" id="q3">
+                    <br> <br>
+                    <i id="icon3"  class='fa fa-pie-chart' style="font-size:48px;"></i>
+                    <p class="number_qdr">2</p>
+                    <p class="text_name">Vendas e Marketing</p>
+                    
+                </div>
+                <div class="quadrado2" id="q4">
+                    <br> <br>
+                    <i id="icon4" class="fa fa-file-text-o" style="font-size:48px;"></i>
+                    <p class="number_qdr">2</p>
+                    <p class="text_name">Entrada de dados e administracao</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="pFuncionamento" style="margin-top: 70px;"> Como Funciona? </p>
+
+        <div class="div_principal">
+
+            <div class="elementos3">
+                <div class="quadrado3">
+                    <br> <br>
+                    <i id="icon9" class="fa fa-lock" style="font-size:50px;"></i>
+                    <p class="text_name">Escolha apartir do seu melhor jogo</p>
+                    <p class="psize">Traga para a mesa estrategias de sobrevivencia ganha-ganha para garantir a dominacao proativa daqui para frente</p>
+                </div>
+                <div class="quadrado3">
+                    <br> <br>
+                    <i id="icon10" class="fa fa-gavel" style="font-size:50px;"></i>
+                    <p class="text_name">Faça seu trabalho</p>
+                    <p class="psize">Libere com eficiencia informações de mídia cruzada sem. Maximize rapidamente o retorno sobre o investimento</p>
+                </div>
+                <div class="quadrado3">
+                    <br><br>
+                    <i id="icon11" class="fa fa-trophy" style="font-size:50px;"></i>
+                    <p class="text_name">De feedback e repita</p>
+                    <p class="psize">A imersão em nanotecnologia ao longo da estrada da informação fechara o ciclo de foco exclusivo
+                    </p>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+       
+        <br> <br>
+       <!-- ################################################ ULTIMOS PROJETOS #####################################################33-->
+       <br><br>
+       <div>
+        <div class="UltProjetos">
+            <p class="Ultimos_Projetos">Ultimos Projetos</p>
+            <p class="Procurar_todos_projeos">Procurar todos os Projetos  <i id="icon" class="fa fa-arrow-right" style="font-size:10px;color:rgb(0, 225, 255)"></i> </p> 
+        </div>
+        <div class="divUltProjetos" id="idUltProjetos">
+            <div class="projetos2">
+                <div class="" id="primeiro_projeto">
+                    <h3 class="h3Projeto1" ></h3>
+                    <button class="btUrgente"><b class="button_categoria1"></b> </button>
+                    <div class="numLancer_lancerMedio_tempo">
+                        <i id="icon" class="fa fa-gavel" style="font-size:17px;color:rgb(168, 168, 168); margin-top: 15px;"></i>
+                        <p style="color:rgb(168, 168, 168) ;" class="pLances1"></p>&ensp; 
+                        <i id="icon" class="fa fa-sticky-note-o" style="font-size:17px;color:rgb(168, 168, 168); margin-top: 15px;"></i>
+                        <p style="color:rgb(168, 168, 168) ;" class="pLances_medio1"></p>&ensp; 
+                        <i id="icon" class="fa fa-clock-o" style="font-size:17px;color:rgb(168, 168, 168); margin-top: 15px;"></i> 
+                        <p style="color:rgb(168, 168, 168) ;" class="pmeses1"></p>
+                    </div>
+                    <div class="divButoon">&ensp; 
+                        <button class="bt"> <b class="bt1_funcao1"></b> </button>
+                        <button class="bt"><b class="bt1_funcao2"></b> </button>
+                        <button class="bt"><b class="bt1_funcao3"></b> </button>
+                        <button class="bt"><b class="bt1_funcao4"></b> </button>
+                        <button class="bt"> <b class="bt1_funcao5"> </b> </button>
+                    </div>
+                </div>
+                <div class="phora">
+                    <h3 class="preco_hora1"></h3>
+                    <p>preço por hora</p>
+                    <button class="btLance_agora"><b>Lance agora</b> </button>
+                </div>
+            </div>
+
+            <!-- ##################################################################################################################33-->
+            <div class="projetos2">
+                <div class="p1">
+                    <h3 class="h3Projeto2" > </h3>
+                    <button class="btUrgente"><b class="button_categoria2"></b> </button>
+                    <div class="numLancer_lancerMedio_tempo">
+                        <i id="icon" class="fa fa-gavel" style="font-size:17px;color:rgb(168, 168, 168); margin-top: 15px;"></i>
+                        <p style="color:rgb(168, 168, 168) ;" class="pLances2"></p>&ensp; 
+                        <i id="icon" class="fa fa-sticky-note-o" style="font-size:17px;color:rgb(168, 168, 168); margin-top: 15px;"></i>
+                        <p style="color:rgb(168, 168, 168) ;" class="pLances_medio2"></p>&ensp; 
+                        <i id="icon" class="fa fa-clock-o" style="font-size:17px;color:rgb(168, 168, 168); margin-top: 15px;"></i> 
+                        <p style="color:rgb(168, 168, 168) ;" class="pmeses2"></p>
+                    </div>
+                    <div class="divButoon">&ensp; 
+                        <button class="bt"><b class="bt2_funcao1"></b> </button>
+                        <button class="bt"><b class="bt2_funcao2"></b> </button>
+                        <button class="bt"><b class="bt2_funcao3"></b> </button>
+                        <button class="bt"><b class="bt2_funcao4"></b> </button>
+                        <button class="bt"> <b class="bt2_funcao5"></b> </button>
+                    </div>
+                </div>
+                <div class="phora">
+                    <h3 class="preco_hora2"> $ 50.000 - $ 100.000 </h3>
+                    <p>preço por hora</p>
+                    <button class="btLance_agora"><b>Lance agora</b> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- #################################################### ULTOMOS tRABALHOS######################################################33-->
+ <br><br>   
+ <div>
+        <div class="UltTrabalhos">
+            <p class="Ultimos_Trabalhos">Ultimos Trabalhos</p>
+            <p class="Procurar_todos_trabalhos">Procurar todos os trabalhos <i id="icon" class="fa fa-arrow-right" style="font-size:10px;color:rgb(0, 225, 255)"></i> </p>
+        </div>
+        <div class="divUltTrabalhos">
+            <div class="Trabalhos">
+                <div class="div_Imagem">
+                    <img class="game_image" src="./imagens/game.jpg" alt="game">
+                </div>
+                <div class="div_jogos" >
+                    <p> &ensp;&ensp;jogos <br> &ensp;&ensp;
+                        <i id="icon" class="fa fa-tasks" style="font-size:17px;color:rgb(168, 168, 168)"> UNICO </i>&ensp;
+                        <i id="icon" class="fa fa-map-marker" style="font-size:17px;color:rgb(168, 168, 168)"> Washington </i>&ensp;
+                        <i id="icon" class="fa fa-clock-o" style="font-size:17px;color:rgb(168, 168, 168)"> 2 meses atras</i> 
+                    </p>
+                </div>
+                <div class="tempo_total">&ensp;
+                    <button class="btTempo_Total"><b>Tempo Total</b> </button>
+                </div>
+             </div>
+
+ <!-- ##########################################################################################################33-->
+             <div class="Trabalhos">
+                <div class="div_Imagem">
+                    <img class="game_image" src="./imagens/face.jpg" alt="game">
+                </div>
+                <div class="div_jogos">
+                    <p> &ensp;&ensp;Aplicativo movel <br> &ensp;&ensp;
+                        <i id="icon" class="fa fa-tasks" style="font-size:17px;color:rgb(168, 168, 168)"> ADFY&ensp; </i>&ensp;
+                        <i id="icon" class="fa fa-map-marker" style="font-size:17px;color:rgb(168, 168, 168)"> Cidade Texas</i>&ensp;
+                        <i id="icon" class="fa fa-clock-o" style="font-size:17px;color:rgb(168, 168, 168)"> 2 meses atras</i> 
+                    </p>
+                </div>
+                <div class="tempo_total">
+                    <button class="btTempo_Total"><b>Tempo Total</b> </button>
+                </div>
+             </div>
+
+<!-- ##########################################################################################################33-->
+              <div class="Trabalhos">
+                <div class="div_Imagem">
+                    <img class="game_image" src="./imagens/face.jpg" alt="game">
+                </div>
+                <div class="div_jogos">
+                    <p> &ensp;&ensp;Aplicativo movel <br> &ensp;&ensp;
+                        <i id="icon" class="fa fa-tasks" style="font-size:17px;color:rgb(168, 168, 168)">  ADFY&ensp; </i>&ensp;
+                        <i id="icon" class="fa fa-map-marker" style="font-size:17px;color:rgb(168, 168, 168)"> Washington</i>&ensp;
+                        <i id="icon" class="fa fa-clock-o" style="font-size:17px;color:rgb(168, 168, 168)"> 2 meses atras</i> 
+                    </p>
+                </div>
+                <div class="tempo_total">&ensp;
+                    <button class="btTempo_Total"><b>Tempo Total</b> </button>
+                </div>
+             </div>
+        </div>
+    </div>
+
+
+
+    <!-- ###############################################################Freelancers mais bem avaliados######################################################## -->
+    <br><br>
+    <div>
+        <div class="Freelancers_avaliados">
+            <p class="fbem_avaliado">Freelancers mais bem avaliados</p>
+            <p class="Procurar_todos_freelancers">Procurar todos os freelancers<i id="icon" class="fa fa-arrow-right" style="font-size:10px;color:rgb(0, 225, 255)"></i> </p>
+        </div>
+    </div>
+    <div class="divFreelancers_mais_avaliados">
+        <div class="Div_people1">
+            <img class="people" src="./imagens/face2.jpeg" alt="people1">
+            <p >Techno Suave <p class="p_people">Sites, TI e Software / .NET</p></p>
+
+            <div>
+                <button class="avalia">5.0</button>
+                <i class="fa fa-star" style="font-size:15px;color:rgb(255, 174, 0)"></i>
+                <!-- <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i> -->
+                <i class="fa fa-star" style="font-size:15px;color:rgb(255, 174, 0)"></i>
+                <i class="fa fa-star" style="font-size:15px;color:rgb(255, 174, 0)"></i>
+                <i class="fa fa-star" style="font-size:15px;color:rgb(255, 174, 0)"></i>
+                <i class="fa fa-star" style="font-size:15px;color:rgb(255, 174, 0)"></i>
+            </div>
+            <div style="display: flex; margin-top: 25px;">
+                <div class="free_p">
+                   <p>Taxa horario <br> <b style="color: black;">$ 12</b></p> 
+                </div >
+                <div class="free_p">
+                   <p>Lance ganho <br> <b style="color: black;"> 31</b> </p> 
+                </div>
+                <div class="free_p">
+                   <p>Recontratado <br> <b style="color: black;">28</b> </p> 
+                </div>
+            </div>
+            <button class="bt_verPerfil">Ver Perfil</button>
+        </div>
+<!-- ######################################################################################################################## -->
+        <div class="Div_people2">
+            <img class="people" src="./imagens/face3.jpg" alt="people1">
+            <p >Dream Tech <p class="p_people">Sites, TI e Software / Desenvolvimento de jogos</p></p>
+
+            <div>
+                <button class="avalia">3.0</button>
+                <i class="fa fa-star" style="font-size:15px;color:rgb(255, 174, 0)"></i>
+                <!-- <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i> -->
+                <i class="fa fa-star" style="font-size:15px;color:rgb(255, 174, 0)"></i>
+                <i class="fa fa-star" style="font-size:15px;color:rgb(255, 174, 0)"></i>
+                <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i>
+                <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i>
+            </div>
+            <div style="display: flex; margin-top: 25px;">
+                <div class="free_p">
+                   <p>Taxa horario <br> <b style="color: black;">$ 10</b></p> 
+                </div >
+                <div class="free_p">
+                   <p>Lance ganho <br> <b style="color: black;"> 2</b> </p> 
+                </div>
+                <div class="free_p">
+                   <p>Recontratado <br> <b style="color: black;">0</b> </p> 
+                </div>
+            </div>
+            <button class="bt_verPerfil">Ver Perfil</button>
+        </div>
+
+    <!-- ######################################################################################################################## -->
+        <div class="Div_people3">
+            <img class="people" src="./imagens/face4.png" alt="people1">
+            <p >Poderoso <p class="p_people">Sites, TI e Software / .NET</p></p>
+
+            <div>
+                <button class="avalia">0.0</button>
+                <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i>
+                <!-- <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i> -->
+                <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i>
+                <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i>
+                <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i>
+                <i class="fa fa-star-o" style="font-size:15px;color: rgb(179, 176, 176);"></i>
+            </div>
+            <div style="display: flex; margin-top: 25px;">
+                <div class="free_p">
+                   <p>Taxa horario <br> <b style="color: black;">$ 25</b></p> 
+                </div >
+                <div class="free_p">
+                   <p>Lance ganho <br> <b style="color: black;"> 1</b> </p> 
+                </div>
+                <div class="free_p">
+                   <p>Recontratado <br> <b style="color: black;">0</b> </p> 
+                </div>
+            </div>
+            <button class="bt_verPerfil">Ver Perfil</button>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div style="margin-top: 45px;">
+        <table>
+            <tr class="tr_final">
+                <td class="tdfinal1">
+                    <i class="fa fa-legal" style="font-size:48px;color: rgb(179, 176, 176);"></i>
+                    <div >
+                        <p style="color: rgb(25, 196, 139); font-size: 25px;"> <b>8</b>  </p>
+                        <p style="color: rgb(179, 176, 176) ; font-size: 20px;">Projetos Publicados</p>
+                    </div>
+                </td>
+                <td class="tdfinal1">
+                    <i class="fa fa-suitcase" style="font-size:48px;color: rgb(179, 176, 176);"></i>
+                    <div style="border-left: 1px solid rgb(179, 176, 176) ;">
+                        <p style="color: rgb(25, 196, 139); font-size: 25px;"> <b>2</b>  </p>
+                        <p style="color: rgb(179, 176, 176) ; font-size: 20px;">Empregos Publlicos</p>
+                    </div>
+                </td>
+                <td class="tdfinal1">
+                    <i class="fa fa-user-o" style="font-size:48px;color: rgb(179, 176, 176);"></i>
+                    <div style="border-left: 1px solid rgb(179, 176, 176) ;">
+                        <p style="color: rgb(25, 196, 139); font-size: 25px;"> <b>108</b>  </p>
+                        <p style="color: rgb(179, 176, 176) ; font-size: 20px;">autonomos</p>
+                    </div>
+                </td>
+                <td class="tdfinal1">
+                    <i class="fa fa-trophy" style="font-size:48px;color: rgb(179, 176, 176);"></i>
+                    <div style="border-left: 1px solid rgb(179, 176, 176) ;">
+                        <p style="color: rgb(25, 196, 139); font-size: 25px;"> <b>$ 10.947</b>  </p>
+                        <p style="color: rgb(179, 176, 176) ; font-size: 20px;">ganhos da comunidade</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- ##############################################################################################################################    -->
+        
+    </main>
+
+    <footer >
+        <div class="ClassFooter">
+            <br><br>
+            <div class="divFooter">
+                <h2 class="h2Footer"> Minha conta</h2>
+                <p id="p1"> Conecta-se</p>
+                <p id="p2">Registro</p>
+                <p id="p3">Publica um trabalho</p>
+            </div> <br> <br>
+            <hr>
+            <div class="footer_icons">
+
+                <table class="tb">
+                    <tr>
+                        <td id="td_direitos_reservados"><p id="p4">2022 Todos os direitos reservados</p></td>
+                        <td id="td_icons" >
+                            <div id="div_icons_footer" style="border-left: 1px solid white ;">
+                                <i class="fa fa-facebook-f" style="font-size:24px"></i>
+                                <i class="fa fa-twitter" style="font-size:24px"></i>
+                                <i class="fa fa-instagram" style="font-size:24px"></i>
+                                <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                                <i class="fa fa-pinterest" style="font-size:24px"></i>
+                                <i class="fa fa-youtube-play" style="font-size:24px"></i>
+                            </div>
+                        </td>
+                        <td id="td_button">
+                            <button class="bt_subir">
+                                <i id="icon_angle" class="fa fa-angle-up" style="font-size:26px; color: white;"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <br>
+        </div>
+        
+        
+
+    </footer>
+
+    <script src="./JS/projeto.js"></script>
+    
+</body>
+</html>
